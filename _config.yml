@@ -17,4 +17,8 @@ defaults:
       path: ""
     values:
       layout: "default"
-theme: jekyll-theme-merlot
+      
+theme: jekyll-theme-hacker
+markdown: kramdown
+kramdown:
+  parse_block_html: true
