@@ -1,0 +1,35 @@
+
+* How to run
+** installs before running
+create Gemfile
+
+bundle exec jekyll serve
+
+
+* Code layout
+** assests/
+*** css 
+**** main.css
+**** main.scss
+** category
+*** edge-case.md
+*** markup.md
+
+
+* Steps in transformation
+** modify _config.yml:
+removed paginate, jekyll plugin
+** _includes/head.html
+** _includes/sidebar.html
+** jekyll-theme-hydeout.gemspec
+** _layouts/default.html
+** _layouts/index.html
+** _sass/hydeout/_layout.scss
+defined new CSS blocks
+
+
+* Issues
+** 404.html: go to homepage not working
+
+
+

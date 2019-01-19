@@ -1,0 +1,195 @@
+---
+layout: default_nonhome
+---
+<h3>
+  <div class="namebar" id="landchange">Detection of trends and changes in land use from satellite images</div>
+</h3>
+
+
+<li>
+  <p>Designed and developed an ensemble based approach for change detection
+from spatio-temporal stack of satellite images. The approach 
+    collates answers from principally different unsupervised and supervised techniques.
+    Here we show comparison the outcomes of the three land change algorithms  over two satellite images taken 16 days apart (displayed below)</p>
+  <div id="icontainer">
+    <a href="#">
+      <figure>
+	<image style="float:left;  padding 10px" src=./bip_1837_200x200_ts161.png width=400 height=400>
+	  <figcaption>Timepoint: 161</figcaption>
+      </figure>
+    </a>
+    <a href="#">
+      <figure>
+	<image style="float:left;  padding 10px" src=./bip_1837_200x200_ts171.png width=400 height=400>
+	  <figcaption>Timepoint: 171</figcaption>
+      </figure>
+    </a>
+	<br clear="all"/>
+	<p>The figures below illustrate the result of  each of the land change algorithm on the input data:</p>
+	</li>
+	<div id="icontainer">
+	  <a href="#">
+	    <figure>
+	      <img  src=./bf_scene_4.png width=300 height=300>
+	      <figcaption>Bfast</figcaption>
+	    </figure>
+	  </a>
+	  <a href="#">
+	    	    <figure>
+		      <img  src=./ltr_scene_4.png width=300 height=300>
+		      	      <figcaption>LandTrendR</figcaption>
+		    </figure>
+	  </a>
+	  <a href="#">
+	    <figure>
+	      <img  src=./ewma_scene_4.png width=300 height=300>
+	      	      <figcaption>EWMA</figcaption>
+	    </figure>
+	  </a>
+	</div>
+	<br clear="all"/>
+	The ensemble method combines results from all three algorithms using Hausdroff distance metric.
+	<div id="icontainer">
+	  <a href="#">
+	    <figure>
+	      <img  src=./polyalgo_scene_4.png width=300 height=300>
+	      <figcaption>Ensemble method land change detection</figcaption>
+	    </figure>
+	  </a>
+	</div>
+	All the consituent algorithms (ewma, bfast, and landTrendR)  were reinterpreted and implemented in interpreted and high performance languages.
+	Big data (i.e., Hadoop implementations were also considered). Below are some of the performance results:
+<div id="icontainer">
+  <a href="#">
+    <figure>
+      <img  src=./bfastscaledspdup.png width=300 height=300>
+      <figcaption>Scaleup of Bfast w.r.t. number of cores</figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img  src=./ewmacdspdup.png width=300 height=300>
+      <figcaption>Scaleup for Ewma w.r.t. number of cores</figcaption>
+    </figure>
+  </a>
+</div>
+
+
+<h3>
+  <div class="namebar" id="GLRA">Image compression using Generalized Low Rank Approximation of Matrices</div>
+  
+</h3>
+This work studies the use of generalized low rank
+approximations of matrices for image compression. 
+The approach was proposed in paper titled <em>Generalized Low Rank Approximations of
+  Matrices</em> published in Machine Learning journal.
+It generalizes low rank approximation to multiple matrices, thus adapting the approach
+for analyzing datasets of images (rather than having to pro-
+cess one image at a time).
+I implemented this approach 
+and run  experiments on a fa-
+cial data dataset that was used by the author as well as and on a
+remote sensing dataset. Significant compression is achieved
+Comparison between the results of reconstruction and clas-
+sification obtained from generalized low rank approximation
+approach and the results obtained using SVD is also pre-
+sented; the recontructions with the current approach are
+much better. The proposed approach also achieves much
+better time complexity. Since remote sensing datasets, in
+particular, are plagued by massive amounts of missing data,
+such methods of compression can be particularly useful to
+them.
+
+Some results are presented below. For a detailed report
+on the implementation and report see: <a href="report.pdf"> report.pdf</a>
+
+  <div id="icontainer">
+    <a href="#">
+      <figure>
+	<image align="center" src=./rec.png width=600 height=400>
+	  <figcaption>ORL dataset, d = 20. The original image
+(top row), images compressed by the proposed ap-
+proach (middle row) and the images compressed by
+SVD (bottom row)</figcaption>
+      </figure>
+    </a>
+    <a href="#">
+      <figure>
+	<image  src=./leaves.png width=600 height=400>
+	  <figcaption>Leaves dataset, d = 20. The original image
+	    (top row), images compressed by the proposed ap-
+	    proach (second row). SVD ran out on memory for
+	    this dataset on the computer being used.</figcaption>
+      </figure>
+    </a>
+    <a href="#">
+      <figure>
+	<img  src=./food.png width=600 height=400>
+	<figcaption>Menu-Match dataset, d = 20. The origi-
+nal image (top row), images compressed by the pro-
+posed approach (second row). SVD ran out on mem-
+ory for this dataset on the computer being used.</figcaption>
+      </figure>
+    </a>
+  </div>
+
+
+	
+<h3>
+  <div class="namebar" id="phd_work">High Order Methods for Edge Detection and Applications</div>
+</h3>
+<p>My dissertation mostly focused on the use of polynomials for the purpose of image processing, in general, and edge detection, in 
+
+  particular. 
+Displayed below are some related results from the topics that I have explored so far.</p>
+<li> Detect derivative discontinuities (R. Saxena, A. Gelb, and H. Mittelmann, Communications in Computational Physics, Vol 5, No. 2-4, 
+  pp. 694-711, 2009):<br>
+
+  <div id="icontainer">
+  <a href="#">
+    <figure>
+      <img src=nonlinear2Dexample_nonuniform_exp.png width=300 height=300>
+      <figcaption>Scaleup of Bfast w.r.t. number of cores</figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+       <img  src=nonlinear2Dexample_exp_xderivative.png width=300 height=300>
+      <figcaption>Scaleup for Ewma w.r.t. number of cores</figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+       <img  src=nonlinear2Dexample_exp_yderivative.png width=300 height=300>
+       <figcaption>Scaleup for Ewma w.r.t. number of cores</figcaption>
+    </figure>
+  </a>
+  </div>
+  </li>
+
+
+<li>
+Reconstruction of the gradient of discontinuous data given at non-uniformly sampled points using essentially non-oscillatory techniques for stencil choosing along with polynomial interpolation for reconstructing. Determine jump locations in multi-dimensional problems (R. Archibald, A. Gelb, R. Saxena, and D. Xiu, Journal of
+Computational Physics, Vol 228, pp. 2676-2689, 2009): <br>
+
+  <div id="icontainer">
+  <a href="#">
+    <figure>
+      <img  src=d2n8.png width=300 height=300>
+      <figcaption>Scaleup of Bfast w.r.t. number of cores</figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img  src=2Dedgedetectionresult_4levels.png width=300 height=300>
+      <figcaption>Scaleup for Ewma w.r.t. number of cores</figcaption>
+    </figure>
+  </a>
+  </div>
+</li>
+
+<li>I adapted the polynomial annihilation edge detection method (Archibald <span style="font-style:italic"> et al.</span>, 2005) for determining jump discontinuities in coefficients space. Specifically, determining
+jump discontinuities when the data is given in the form of coefficients with respect to a know polynomial basis instead of the 
+  physical domain.
+  </li>
+

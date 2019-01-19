@@ -1,0 +1,71 @@
+.head {       display:block;
+
+      }
+.logo {float:left; padding:0px;}
+
+.similar { float:left; width:200px; background:#000; clear:both; }
+
+
+.post {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  min-height: 11rem;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+
+}
+
+
+
+.post .post-thumbnail {
+  width: 30%;
+  max-width: 100%;
+  min-height: 11rem;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: 50% 50%;
+}
+
+.post .post-content {
+  padding: 1rem;
+  width: 100%;
+}
+
+.post .post-content .post-date,
+.post .post-content .post-words {
+  font-size: 12px;
+}
+
+.post .post-content .post-title {
+  margin: 0 0 10px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.post .post-content .post-title a {
+  font-family: 'PT Serif', serif;
+  text-decoration: none;
+  color: #263959;
+}
+
+.post .post-content p {
+  margin-top: 0;
+}

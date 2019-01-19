@@ -1,0 +1,195 @@
+---
+layout: index
+title: Home
+---
+
+  
+<h3>
+  <div class="namebar">About me</div>
+</h3>
+<article class="post">
+  <div class="post-content">
+    <p>  I am a Computer Science and Mathematics major with interest in data analytics, big data,
+         image processing/analysis (of remote sensing, satellite images, medical images, etc),
+      high performance computing (accelerators, MPI, OpenMP, Python), 
+      mathematical modeling, and numerical optimization. </p>
+      
+    <p>I hold a Ph.D. from the Arizona State University in applied mathematics. 
+      My thesis focused on 'High Order Methods for Edge Detection and Applications'. I subsequently taught  at Michigan State
+      University and University of California, San Diego while pursuring research in  molecular surface reconstruction as postdoctorate and visiting researcher
+      repectively.</p>
+
+    <p>My current appointment is at Virginia  Tech, Blacksburg. My research is in the area of land usage and trend detection
+      from satellite images and is a collaboration between Forest Resources and Enviormental Conservation and the Department of Computer Science both at Virginia Tech.</p>
+  </div>
+</article>
+
+
+<h3>
+  <div class="namebar" id="Interests">Interests</div>
+</h3>
+<article class="post">
+  <div class="post-content">
+    <li> Data analytics, statistics, machine learning</li>
+    <li> Big Data and High performance computing (Hadoop, GPU, MPI, OpenMP)</li>
+    <li> Signals, images, surfaces and other multivariate data: Edge detection, reconstruction, smoothing, denoising, visualization.</li>
+    <li> Remote sensing, satellite images, medical images</li>
+    <li> Spectral methods and their applications.</li>
+    <li> Mathematical modeling, numerical optimization, visualization </li>
+  </div>
+</article>
+		
+<h3>
+  <div class="namebar">Projects</div>
+</h3>
+<article class="post">
+  <div class="post-content">
+    <h2 class="post-title">LULC-Net: Generalized convolution neural network classfier
+for detecting land use changes from satellite data</h2>
+    <p>Preliminary investigation of a novel application of convolutional neural networks (CNNs), viz.,
+	locating regions that have undergone land use and land cover changes.
+    </p>
+    <ul>
+      <li>Developed an algorithm, that strategically combines known algorithms and labels
+data to produce high quality labels describing land use and land change.</li>
+      <li>The CNN currently consists of 3 convolutional and 3 fully connected layers.</li>
+      <li>All training and validation was done on NVIDIA p100 GPU which features 3584 1GHz cuda cores  with 12GB of memory. </li>
+      <li>The work has broader significance on detecting changes from image stream from motion camera and webcam.</li>
+    </ul>
+
+For a detailed report
+on the implementation and report see: <a href="lulc-net.pdf"> lulc-net.pdf</a>
+</article>
+
+
+<article class="post">
+  <div class="post-content">
+    <h2 class="post-title">Detection of trends and changes in land use using satellite images</h2>
+    <p>Designed and developed an ensemble based approach for change detection
+      from spatio-temporal stack of satellite images. The approach 
+      collates answers from principally different unsupervised and supervised techniques:</p>
+    <ul>
+      <li> dynamic programming based method</li>
+      <li> harmonic regression based learning method</li>
+      <li> random forest based classification tree method and</li>
+      <li> convolution neural network based method (under development)</li>
+    </ul>
+
+    For a  synposis of the results from this work see: <a href=research_result_synpopsis.html#landchange>here</a>
+    <div id="icontainer">
+      <a href="#">
+	<figure>
+	  <img  src=./bf_scene_4.png width=300 height=300>
+	  <figcaption>Bfast</figcaption>
+	</figure>
+      </a>
+      <a href="#">
+	<figure>
+	  <img  src=./ltr_scene_4.png width=300 height=300>
+	  <figcaption>LandTrendR</figcaption>
+	</figure>
+      </a>
+      <a href="#">
+	<figure>
+	  <img  src=./ewma_scene_4.png width=300 height=300>
+	  <figcaption>EWMA</figcaption>
+	</figure>
+      </a>
+    </div>
+  </div>
+</article>
+
+<article class="post">
+  <div class="post-content">
+    <h2 class="post-title">Detecting users with dependency traits in Twitter</h2>
+    <p>  Developed technique to identify users exhibiting dependence (anomously high activity) to a particular 
+      lifestyle such as cosmetics, shopping, etc.
+    </p>
+    <ul>
+    <li> Developed focussed crawler that, starting with a set of seed users, grows the potential pool 
+        of candidate users through biased exploration of the follower-followee graph.</li>
+    <li> Analyzed approx. 10 million users, 10 billion tweets, 1 billion edges, and over 20 facets of the users. </li>
+    <li> Analytics was written in python while data managment was done using database. This allowed for concurrent processing of various phases of the analytics pipeline </li>
+    </ul>
+</article>
+
+
+<article class="post">
+  <div class="post-content">
+    <h2 class="post-title">Rendering images from MRI sensors  using inversion of circular radon transforms</h2>
+    <p>The geometry and the mechanism for capturing signals inside a magnetic resonance imaging (MRI) scanner is complex and challenging -- the sensors are placed along circular arc where they  capture the signal in frequency domain. This  project proposed derivations and algorithms to reconstruct the signal in eucildean-time domain. The project</p>
+    <ul>
+      <li> represented non-planar MRI scans as recursive integrals </li>
+      <li> developed methods that provide approximate answer for the
+	integrals efficiently, as exact numerical solution turned out to
+	be computationally demanding </li>
+      <li> identified generic  programming (C++ templates) as natural constructs to 
+	express recursive integrals and their computations</li>
+      <li> developed strategy to parallelize the computation using linux threads </li>re
+    </ul>
+  </div>
+</article>
+
+<article class="post">
+  <div class="post-content">
+    <h2 class="post-title">Image compression using generalized low rank approximation</h2>
+    <p>
+      Implemented generalized low rank approximation (GLRA) for matrices  and applied it for image compression.
+    </p>
+    <ul>
+      <li>obtained 30% data compression ratios, on an average </li>
+      <li>GLRA has better time complexity (several orders of magnitude faster) than SVD. </li>
+      <li>Reconstruction and classification done using GLRA-compressed images was better than
+	that done using SVD compressed data.</li>
+      <li>Codes were implemented in Python.</li>
+    </ul>
+    For a  synposis of the results from this work see: <a href=research_result_synpopsis.html#GLRA>here</a>.
+    Code, datasets, and the report is posted on <a href="https://github.com/rishus/GeneralizedLowRankApproximation">Github</a>
+  </div>
+</article>
+
+
+<article class="post">
+  <div class="post-content">
+    <h2 class="post-title">High Order Methods for Edge Detection and Applications</h2>
+    My dissertation mostly focused on the use of polynomials for the purpose of image processing, in general, and edge detection, in 
+  particular. 
+    For a  synposis of the results from this work see: <a href=research_result_synpopsis.html#phd_work>here</a>
+  </div>
+
+</article>
+
+		
+
+		<h3>
+		<div class="namebar" id="Publications">Publications</div>
+		</h3>
+		<article class="post">
+		  <div class="post-content">
+		    <ul>
+		      <li> <em>Towards a Polyalgorithm for Land Use Change Detection</em>, R. Saxena, L. T. Watson, R. H. Wynne, and V. A. Thomas, Computers and Geosciences, in preparation</li>
+		      <li><em>Scaling Constituent Algorithms of a Trend and Change Detection Polyalgorithm</em>
+			R. Saxena, L. T. Watson, V. A. Thomas, and R. H. Wynne, in High Performance Computing Symp. (HPC 2017), Proc. 2017 Spring Simulation Multiconference, Society for Modelling and Simulation International, Vista, CA, 12 pages, 2017</li>
+		      <li>Damage Localisation in Plate Like- Structures Using the Two-Dimensional Polynomial Annihilation Edge Detection Method</li>
+		      <li><em>Damage Localisation in Plate Like- Structures Using the Two-Dimensional Polynomial
+			  Annihilation Edge Detection Method</em> C. Surace, R. Saxena, H. Darwich, and M. Gherlone, Journal of Sound and Vibration, 333 (21), pp. 5412-5426, 2014</li>
+		      <li><em>On the use of the polynomial annihilation edge detection for locating cracks in beam-like
+			  structures</em> C. Surace, R. Archibald, and R. Saxena, Computers & Structures, 114-115, pp. 72-83, 2013</li>
+		      <li><em>A Multiscale Model for Virus Capsid Dynamics</em>
+			C. Chen, R. Saxena, and G.-W. Wei, International Journal of Biomedical Imaging, Article ID 308627, 2010}
+		      </li>
+		      
+		      <li><em>Discontinuity detection in multivariate space for stochastic simulations</em>
+			R. Archibald, A. Gelb, R. Saxena, and D. B. Xiu, Journal of Scientific Computation, 228, pp. 2676-2689, 2009</li>
+		      <li><em>High Order Method for Gradient Edge Detection</em> R. Saxena, A. Gelb, and H. Mittelmann, Communications in Computational Physics,  5 (2-4), pp. 694-711, 2009 </li>
+			  
+		    </ul>
+		    
+		  </div>
+		  
+		</article>
+		
+
+
+
+
