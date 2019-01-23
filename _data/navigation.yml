@@ -1,8 +1,7 @@
-- name: Home
-  link: /
-- name: About
-  link: /about.html
-- name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html
+# Menu navigation links
+
+- title: Theme Setup
+  url: /theme-setup/
+
+- title: External Link
+  url: http://mademistakes.com
