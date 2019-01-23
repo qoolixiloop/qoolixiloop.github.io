@@ -214,14 +214,14 @@ body {
     display: inline-block;
 }
 figcaption {
-    margin: 2px 0 0 0;
+    margin: 0px 0 0 0;
     font-variant: small-caps;
     font-family: Arial;
     font-weight: bold;
     color: #bb3333;
 }
 figure {
-    padding: 1px;
+    padding: -1px;
 }
 img:hover {
     transform: scale(1.1);
